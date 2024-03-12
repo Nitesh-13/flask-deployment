@@ -9,7 +9,7 @@ def home():
 
 @app.route("/test")
 def test():
-    with open("test.txt") as f:
+    with open("test.txt", "w") as f:
         f.write("Hello world")
     return send_file("test.txt")
 
